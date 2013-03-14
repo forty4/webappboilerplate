@@ -1,0 +1,10 @@
+<form name="signin" class="form-signin">
+    <h2 class="form-signin-heading">Smart Care Service</h2>
+    <input name="id" type="text" class="input-block-level " placeholder="ID or Email address">
+    <input name="password" type="password" class="input-block-level" placeholder="Password">
+    <label class="checkbox">
+        <input id="remember" type="checkbox" value="remember-me">" Remember me "
+    </label>
+    <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+    {{#if message}}<p class="alert-error"><em>{{message}}</em></p>{{/if}}
+</form>
